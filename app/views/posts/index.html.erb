@@ -1,5 +1,4 @@
 <body>
-  <h1>Instagram</h1>
   <% @posts.each do |post| %>
   <div>
     <%= link_to (image_tag post.image.url(:medium)), post_path(post) %>
