@@ -1,0 +1,7 @@
+.content
+%h1 Kingstagram
+%h2 Welcome
+
+= @posts.each do |post|
+  = image_tag post.image.url(:medium)
+  = post.caption
