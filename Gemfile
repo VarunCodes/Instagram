@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'paperclip', '~> 5.2'
 gem 'simple_form', '~> 3.5'
@@ -22,6 +23,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec', '~> 3.7'
   gem 'capybara', '~> 2.17'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
 end
 
 group :development do
